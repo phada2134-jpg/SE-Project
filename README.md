@@ -31,3 +31,8 @@ organize, and export notes using Markdown formatting.
 - GitHub milestones and issues
 
 ## Repository Structure
+
+## Week 2 Focus
+- JavaFX UI and application structure
+- Editor and preview layout
+- Basic menu navigation
