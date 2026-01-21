@@ -1,7 +1,0 @@
-*.class
-*.jar
-*.log
-out/
-target/
-.idea/
-.vscode/
