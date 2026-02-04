@@ -83,6 +83,17 @@
 </head>
 <body>
     <div id="root"></div>
+
+    <!-- Export PDF button for the demo HTML preview -->
+    <button id="exportPdfBtn" style="position: fixed; right: 20px; bottom: 20px; background:#6366f1; color:white; border:none; padding:12px 16px; border-radius:12px; box-shadow:0 6px 18px rgba(99,102,241,0.25); cursor:pointer;">Export PDF</button>
+    <script>
+        document.getElementById('exportPdfBtn').addEventListener('click', function() {
+            var element = document.getElementById('content');
+            var opt = { margin: 0.5, filename: 'document.pdf', html2canvas: { scale: 2 }, jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' } };
+            if (element) html2pdf().set(opt).from(element).save();
+        });
+    </script>
+
     <script type="module" src="index.tsx"></script>
 </body>
 </html>
